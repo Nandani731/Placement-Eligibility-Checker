@@ -277,8 +277,31 @@ Suggested fields: `result_id`, `student_id`, `placement_id`, `is_eligible`, `rea
 - Defined validation rules, error handling, and expected results.
 - Documented functional requirements and system constraints.
 
-**Deliverables:** SRS document, functional requirements, non-functional requirements, and use case descriptions.
+### WEEK 3: UML Design
 
-**Outcome:** Completed the requirements baseline for system design.
+**Objectives:** Design the system structure and behavior.
 
+**Activities:**
+- Created the use case diagram and class diagram.
+- Prepared activity and sequence diagrams.
+- Defined module interactions and class responsibilities.
+- Reviewed the diagrams against the SRS.
+
+**Deliverables:** UML diagram set and system design documentation.
+
+**Outcome:** Established the software design before implementation.
+
+### WEEK 4: Database Design & UI Mock-ups
+
+**Objectives:** Design database tables and user interfaces.
+
+**Activities:**
+- Identified entities, primary keys, foreign keys, and relationships.
+- Designed student, company, placement, and eligibility records.
+- Prepared login, student profile, eligibility result, and admin screen mock-ups.
+- Reviewed form fields and validation messages.
+
+**Deliverables:** ER diagram, database schema, SQL scripts, and UI mock-ups.
+
+**Outcome:** Prepared the database and user interface designs for coding.
 
