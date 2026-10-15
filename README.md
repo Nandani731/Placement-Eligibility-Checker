@@ -1,4 +1,3 @@
-week 1 ------
 1. User roles
 
 Administrator / Placement Officer
@@ -18,7 +17,6 @@ Project Developer / Maintainer
 - Manage backups and test application updates.
 This is a development responsibility, not necessarily a separate login role.
 
-week 2--------
 2. **Abstract – Placement Eligibility Checker**
 
 The Placement Eligibility Checker is a Java-based software application developed to simplify and automate the campus placement eligibility process in colleges. Students often face difficulties in determining whether they qualify for different companies because every organization has different eligibility criteria, such as minimum CGPA, academic percentage, active backlogs, graduation year, and required technical skills.
@@ -50,6 +48,7 @@ Project guide	[ER.RAM BABU BURI]
 Department	[Computer Science and Engineering]
 Project type-	Project-Based Learning (PBL)
 Academic year	[2024-2028]
+
 ## 📌 Academic Context & Project Overview
 
 **Institution:** Department of Computer Science and Engineering  
@@ -356,3 +355,33 @@ Suggested fields: `result_id`, `student_id`, `placement_id`, `is_eligible`, `rea
 **Deliverables:** Eligibility evaluation engine, results interface, and admin features.
 
 **Outcome:** Completed the primary business functionality.
+
+### WEEK 9: Integration, Testing & Bug Fixes
+
+**Objectives:** Integrate modules and verify end-to-end functionality.
+
+**Activities:**
+- Merged reviewed feature branches into the integration branch.
+- Tested student data management and placement criteria.
+- Checked eligibility calculations for eligible and ineligible cases.
+- Fixed integration errors, invalid inputs, and database issues.
+
+**Deliverables:** Integrated application, test cases, test results, and bug-fix log.
+
+**Outcome:** Prepared a stable version for final validation.
+
+### WEEK 10: Final Report, PPT, Video & Viva
+
+**Objectives:** Complete the academic submission and demonstrate the application.
+
+**Activities:**
+- Prepared the final project report and presentation.
+- Captured screenshots of the implemented application.
+- Recorded a demonstration video, if required.
+- Reviewed the SRS, UML diagrams, database schema, and testing evidence.
+- Prepared viva questions and answers.
+
+**Deliverables:** Final source code, README, project report, PPT, demonstration video, and viva preparation material.
+
+**Outcome:** Prepared the project for final academic evaluation.
+
