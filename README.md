@@ -329,3 +329,30 @@ Suggested fields: `result_id`, `student_id`, `placement_id`, `is_eligible`, `rea
 
 **Outcome:** Enabled the application to manage academic information.
 
+### WEEK 7: Company & Placement Management
+
+**Objectives:** Implement placement opportunities and company eligibility criteria.
+
+**Activities:**
+- Developed company and placement management forms.
+- Implemented criteria configuration for placement opportunities.
+- Connected placement records with the relevant company records.
+- Tested saving, updating, and retrieving eligibility requirements.
+
+**Deliverables:** Company management module, placement module, and criteria configuration.
+
+**Outcome:** Enabled the application to maintain company-specific placement rules.
+
+### WEEK 8: Eligibility Evaluation & Admin Dashboard
+
+**Objectives:** Implement the eligibility engine and administrative functionality.
+
+**Activities:**
+- Developed the eligibility evaluation service.
+- Compared student academic records against configured criteria.
+- Displayed eligibility results and reasons for unmet conditions.
+- Integrated the admin dashboard and reporting features included in the scope.
+
+**Deliverables:** Eligibility evaluation engine, results interface, and admin features.
+
+**Outcome:** Completed the primary business functionality.
