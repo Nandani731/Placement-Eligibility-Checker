@@ -50,8 +50,6 @@ Project guide	[ER.RAM BABU BURI]
 Department	[Computer Science and Engineering]
 Project type-	Project-Based Learning (PBL)
 Academic year	[2024-2028]
-
-week 3 ------
 ## 📌 Academic Context & Project Overview
 
 **Institution:** Department of Computer Science and Engineering  
@@ -204,8 +202,6 @@ The thresholds above are examples only. Actual criteria must be configurable and
 - Generate reports, if included in the final implementation.
 
 
-week 4---
-
 ## 🗄️ Database Schema & Relational Structure
 
 The database can be organized into the following core tables. The final SQL schema should reflect the fields and relationships actually implemented.
@@ -254,4 +250,35 @@ Suggested fields: `result_id`, `student_id`, `placement_id`, `is_eligible`, `rea
 - One placement opportunity can have one configured eligibility criteria record, or multiple versions if criteria history is required.
 - One student can have multiple eligibility assessment results.
 - Each assessment result links a student to a placement opportunity.
+
+## 📅 10-Week Comprehensive Project Log
+
+### WEEK 1: Team Formation, Guide Selection & Abstract
+
+**Objectives:** Finalize the project idea, team responsibilities, and problem statement.
+
+**Activities:**
+- Formed a team of five members.
+- Discussed the manual placement eligibility verification process.
+- Identified the project scope and intended users.
+- Selected the project guide and prepared the abstract for portal submission.
+
+**Deliverables:** Project abstract, team details, problem statement, and initial GitHub repository.
+
+**Outcome:** Established the project foundation and assigned preliminary responsibilities.
+
+### WEEK 2: Software Requirements Specification (SRS)
+
+**Objectives:** Document functional and non-functional requirements.
+
+**Activities:**
+- Identified student and administrator workflows.
+- Specified student academic data and company eligibility criteria.
+- Defined validation rules, error handling, and expected results.
+- Documented functional requirements and system constraints.
+
+**Deliverables:** SRS document, functional requirements, non-functional requirements, and use case descriptions.
+
+**Outcome:** Completed the requirements baseline for system design.
+
 
