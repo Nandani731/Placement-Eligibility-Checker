@@ -414,3 +414,20 @@ The project is intended to demonstrate software engineering practices, object-or
 **Guide:** Er. Ram Babu Buri
 **Academic Year:** 2026
 
+
+  ## 📐 UML Diagrams
+
+### 1. Use Case Diagram
+![Use Case Diagram](mermaid-diagram.png)
+
+### 2. Class Diagram
+![Class Diagram](mermaid-diagram%20(1).png)
+
+### 3. Activity Diagram
+![Activity Diagram](mermaid-diagram%20(2).png)
+
+### 4. Sequence Diagram
+![Sequence Diagram](mermaid-diagram%20(3).png)
+
+### 5. ER Diagram
+![ER Diagram](mermaid-diagram%20(4).png)
