@@ -301,7 +301,31 @@ Suggested fields: `result_id`, `student_id`, `placement_id`, `is_eligible`, `rea
 - Prepared login, student profile, eligibility result, and admin screen mock-ups.
 - Reviewed form fields and validation messages.
 
-**Deliverables:** ER diagram, database schema, SQL scripts, and UI mock-ups.
+### WEEK 5: Core Project Setup & Authentication
 
-**Outcome:** Prepared the database and user interface designs for coding.
+**Objectives:** Establish the project structure and implement the initial application infrastructure.
+
+**Activities:**
+- Created the Java project and organized packages.
+- Configured the MySQL connection through JDBC, if MySQL is the selected database.
+- Created common validation and database utility classes.
+- Began authentication and navigation components.
+
+**Deliverables:** Initial Java application, project structure, database connection, and authentication module draft.
+
+**Outcome:** Established the core development environment.
+
+### WEEK 6: Student Profile Management
+
+**Objectives:** Implement student records and academic information management.
+
+**Activities:**
+- Developed student profile forms.
+- Implemented create, read, update, and delete operations as required.
+- Added validation for CGPA, percentage, and backlog fields.
+- Tested student record storage and retrieval.
+
+**Deliverables:** Student profile module and database operations.
+
+**Outcome:** Enabled the application to manage academic information.
 
