@@ -267,7 +267,22 @@ Suggested fields: `result_id`, `student_id`, `placement_id`, `is_eligible`, `rea
 ### 5. ER Diagram
 ![ER Diagram](mermaid-diagram%20(4).png)
 
+## UML Diagrams
 
+### 1. Use Case Diagram
+![Use Case Diagram](images/usecase.png)
+
+### 2. Class Diagram
+![Class Diagram](images/class.png)
+
+### 3. Activity Diagram
+![Activity Diagram](images/activity.png)
+
+### 4. Sequence Diagram
+![Sequence Diagram](images/sequence.png)
+
+### 5. ER Diagram
+![ER Diagram](images/er.png)
 
 ## 📅 10-Week Comprehensive Project Log
 
