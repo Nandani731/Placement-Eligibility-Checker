@@ -250,6 +250,25 @@ Suggested fields: `result_id`, `student_id`, `placement_id`, `is_eligible`, `rea
 - One student can have multiple eligibility assessment results.
 - Each assessment result links a student to a placement opportunity.
 
+## 📐 UML Diagrams
+
+### 1. Use Case Diagram
+![Use Case Diagram](mermaid-diagram.png)
+
+### 2. Class Diagram
+![Class Diagram](mermaid-diagram%20(1).png)
+
+### 3. Activity Diagram
+![Activity Diagram](mermaid-diagram%20(2).png)
+
+### 4. Sequence Diagram
+![Sequence Diagram](mermaid-diagram%20(3).png)
+
+### 5. ER Diagram
+![ER Diagram](mermaid-diagram%20(4).png)
+
+
+
 ## 📅 10-Week Comprehensive Project Log
 
 ### WEEK 1: Team Formation, Guide Selection & Abstract
@@ -413,21 +432,3 @@ The project is intended to demonstrate software engineering practices, object-or
 **Duration:** 10 Weeks  
 **Guide:** Er. Ram Babu Buri
 **Academic Year:** 2026
-
-
-  ## 📐 UML Diagrams
-
-### 1. Use Case Diagram
-![Use Case Diagram](mermaid-diagram.png)
-
-### 2. Class Diagram
-![Class Diagram](mermaid-diagram%20(1).png)
-
-### 3. Activity Diagram
-![Activity Diagram](mermaid-diagram%20(2).png)
-
-### 4. Sequence Diagram
-![Sequence Diagram](mermaid-diagram%20(3).png)
-
-### 5. ER Diagram
-![ER Diagram](mermaid-diagram%20(4).png)
