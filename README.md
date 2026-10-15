@@ -381,7 +381,36 @@ Suggested fields: `result_id`, `student_id`, `placement_id`, `is_eligible`, `rea
 - Reviewed the SRS, UML diagrams, database schema, and testing evidence.
 - Prepared viva questions and answers.
 
-**Deliverables:** Final source code, README, project report, PPT, demonstration video, and viva preparation material.
+## 🔐 Security & Data Integrity
 
-**Outcome:** Prepared the project for final academic evaluation.
+- Validate all user inputs before processing.
+- Use parameterized SQL queries with `PreparedStatement` when using JDBC.
+- Store passwords using a suitable salted password-hashing algorithm if authentication is implemented.
+- Restrict administrative operations according to the configured user roles.
+- Protect database credentials and API keys from source control.
+- Enforce database constraints and validate records before saving.
+- Avoid exposing sensitive student information in reports or logs.
+
+## 🚀 Future Enhancements
+
+- Import student records from Excel or CSV.
+- Add company-wise eligibility comparison.
+- Generate downloadable eligibility reports.
+- Add email notifications for new placement opportunities.
+- Provide dashboards showing eligible students for each company.
+- Add placement application tracking.
+- Implement audit history and role-based permissions.
+- Develop a web-based version if required in the future.
+
+## 📚 Academic Attribution
+
+This project is developed as part of the **Bachelor of Technology (B.Tech) Computer Science and Engineering Project-Based Learning (PBL)** 
+
+The project is intended to demonstrate software engineering practices, object-oriented programming, database design, modular development, UML modeling, testing, GitHub collaboration, and project documentation.
+
+**Project:** Placement Eligibility Checker  
+**Team Size:** 5 Members  
+**Duration:** 10 Weeks  
+**Guide:** Er. Ram Babu Buri
+**Academic Year:** 2026
 
