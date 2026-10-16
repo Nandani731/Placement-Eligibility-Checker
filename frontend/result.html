@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Eligibility Results</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="dashboard-header">
+        <h1>Placement Eligibility Checker</h1>
+        <a href="dashboard.html" class="dashboard-btn">
+            Back to Dashboard
+        </a>
+    </header>
+
+    <main class="dashboard-container">
+        <section class="welcome-card">
+            <h2>My Placement Results</h2>
+            <p>View your latest eligibility check results below.</p>
+
+            <div id="resultSummary"></div>
+            <div id="results"></div>
+
+            <p id="noResults" style="display: none;">
+                No results found yet. Please check your eligibility first.
+            </p>
+
+            <a href="eligibility.html" class="dashboard-btn">
+                Check Eligibility Again
+            </a>
+        </section>
+    </main>
+
+    <script src="js/result.js"></script>
+</body>
+</html>

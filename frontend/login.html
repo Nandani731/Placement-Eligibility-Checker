@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login | Placement Eligibility Checker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="auth-page">
+
+    <main class="auth-container">
+
+        <section class="auth-brand">
+            <div class="brand-icon">🎓</div>
+            <h1>Placement Eligibility Checker</h1>
+            <p>
+                Your career journey starts here.
+                Check your eligibility and prepare for your future.
+            </p>
+
+            <div class="brand-features">
+                <p>✓ Check company eligibility</p>
+                <p>✓ Track your placement results</p>
+                <p>✓ Plan your career with confidence</p>
+            </div>
+        </section>
+
+        <section class="auth-card">
+
+            <h2>Welcome Back!</h2>
+            <p class="auth-subtitle">Sign in to continue to your dashboard.</p>
+
+            <form id="loginForm">
+
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    autocomplete="email"
+                    required
+                >
+
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter your password"
+                    autocomplete="current-password"
+                    required
+                >
+
+                <p id="message" role="alert"></p>
+
+                <button type="submit" class="auth-submit">
+                    Login to Dashboard
+                </button>
+
+            </form>
+
+            <p class="auth-footer">
+                Don't have an account?
+                <a href="register.html">Register here</a>
+            </p>
+
+            <a href="index.html" class="home-link">← Back to Home</a>
+
+        </section>
+
+    </main>
+
+    <script src="js/login.js"></script>
+
+</body>
+</html>

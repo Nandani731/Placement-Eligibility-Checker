@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard | PlaceReady</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #f5f6fc;
+            color: #20243a;
+        }
+
+        .dashboard-header {
+            background: #fff;
+            padding: 20px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            box-shadow: 0 3px 18px rgba(31, 35, 70, 0.06);
+        }
+
+        .brand {
+            color: #5946e8;
+            font-size: 25px;
+            font-weight: 800;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .status {
+            background: #e5f8ed;
+            color: #16834b;
+            border-radius: 30px;
+            padding: 8px 13px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .dashboard-btn {
+            display: inline-block;
+            border: none;
+            border-radius: 10px;
+            padding: 12px 19px;
+            background: #5946e8;
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.25s;
+        }
+
+        .dashboard-btn:hover {
+            background: #4534cf;
+            transform: translateY(-2px);
+        }
+
+        .logout-btn {
+            background: #fff;
+            color: #5946e8;
+            border: 1px solid #dedbfa;
+        }
+
+        .logout-btn:hover {
+            background: #f0edff;
+            color: #4534cf;
+        }
+
+        .dashboard-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 25px;
+        }
+
+        .welcome-card {
+            position: relative;
+            overflow: hidden;
+            padding: 38px;
+            border-radius: 22px;
+            color: #fff;
+            background: linear-gradient(120deg, #5946e8, #8372f6);
+            box-shadow: 0 15px 35px rgba(89, 70, 232, 0.18);
+        }
+
+        .welcome-card::after {
+            content: "";
+            position: absolute;
+            width: 220px;
+            height: 220px;
+            border: 35px solid rgba(255,255,255,0.09);
+            border-radius: 50%;
+            right: -55px;
+            top: -80px;
+        }
+
+        .welcome-label {
+            display: inline-block;
+            background: rgba(255,255,255,0.17);
+            padding: 7px 12px;
+            border-radius: 30px;
+            font-size: 12px;
+            margin-bottom: 18px;
+        }
+
+        .welcome-card h1 {
+            font-size: clamp(27px, 4vw, 38px);
+            margin-bottom: 12px;
+        }
+
+        .welcome-card > p {
+            color: #eeebff;
+            line-height: 1.7;
+        }
+
+        .profile-email {
+            margin-top: 20px;
+            font-size: 14px;
+            overflow-wrap: anywhere;
+        }
+
+        .section-heading {
+            margin: 36px 0 20px;
+        }
+
+        .section-heading h2 {
+            font-size: 24px;
+            margin-bottom: 7px;
+        }
+
+        .section-heading p {
+            color: #777d92;
+            font-size: 14px;
+        }
+
+        .dashboard-cards {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 24px;
+        }
+
+        .dashboard-card {
+            background: #fff;
+            border: 1px solid #ebeaf5;
+            padding: 28px;
+            border-radius: 20px;
+            transition: transform 0.25s, box-shadow 0.25s;
+        }
+
+        .dashboard-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 14px 32px rgba(38, 34, 87, 0.09);
+        }
+
+        .card-icon {
+            width: 55px;
+            height: 55px;
+            display: grid;
+            place-items: center;
+            background: #eeebff;
+            border-radius: 15px;
+            font-size: 26px;
+            margin-bottom: 22px;
+        }
+
+        .results-icon {
+            background: #e5f8ed;
+        }
+
+        .dashboard-card h3 {
+            font-size: 21px;
+            margin-bottom: 12px;
+        }
+
+        .dashboard-card p {
+            color: #73798e;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 23px;
+        }
+
+        .quick-tip {
+            margin-top: 28px;
+            padding: 22px 25px;
+            border-radius: 16px;
+            background: #fff8e8;
+            border: 1px solid #f8e9c4;
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+        }
+
+        .tip-icon {
+            font-size: 25px;
+        }
+
+        .quick-tip h3 {
+            font-size: 16px;
+            margin-bottom: 6px;
+        }
+
+        .quick-tip p {
+            color: #77705f;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .dashboard-footer {
+            text-align: center;
+            color: #898da0;
+            padding: 25px 15px;
+            font-size: 13px;
+        }
+
+        @media (max-width: 650px) {
+            .dashboard-header {
+                padding: 18px 5%;
+                flex-wrap: wrap;
+            }
+
+            .brand {
+                font-size: 21px;
+            }
+
+            .header-right {
+                gap: 8px;
+            }
+
+            .status {
+                display: none;
+            }
+
+            .dashboard-container {
+                padding: 25px 16px;
+            }
+
+            .welcome-card {
+                padding: 28px 23px;
+            }
+
+            .dashboard-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .dashboard-card {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="dashboard-header">
+        <div class="brand">✦ PlaceReady</div>
+
+        <div class="header-right">
+            <span class="status">● Student Portal</span>
+
+            <button type="button"
+                    id="logoutBtn"
+                    class="dashboard-btn logout-btn">
+                Logout ↗
+            </button>
+        </div>
+    </header>
+
+    <main class="dashboard-container">
+
+        <section class="welcome-card">
+            <span class="welcome-label">YOUR STUDENT DASHBOARD</span>
+
+            <h1>Welcome, <span id="studentName">Student</span>! 👋</h1>
+
+            <p>
+                Your placement journey starts here. Explore opportunities,
+                check your eligibility and take the next step towards your
+                dream career.
+            </p>
+
+            <p class="profile-email">
+                ✉ <strong>Email:</strong>
+                <span id="studentEmail"></span>
+            </p>
+        </section>
+
+        <section>
+            <div class="section-heading">
+                <h2>Your Placement Workspace</h2>
+                <p>Choose what you want to do today.</p>
+            </div>
+
+            <div class="dashboard-cards">
+
+                <article class="dashboard-card">
+                    <div class="card-icon">🎯</div>
+
+                    <h3>Check Eligibility</h3>
+
+                    <p>
+                        Compare your CGPA, backlogs and attendance with
+                        company requirements to discover where you qualify.
+                    </p>
+
+                    <a href="eligibility.html" class="dashboard-btn">
+                        Check Eligibility →
+                    </a>
+                </article>
+
+                <article class="dashboard-card">
+                    <div class="card-icon results-icon">📊</div>
+
+                    <h3>View Results</h3>
+
+                    <p>
+                        Open your eligibility results and review your
+                        placement status for different companies.
+                    </p>
+
+                    <a href="result.html" class="dashboard-btn">
+                        View Results →
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="quick-tip">
+            <div class="tip-icon">💡</div>
+
+            <div>
+                <h3>Placement Tip of the Day</h3>
+
+                <p>
+                    Keep track of your CGPA, maintain good attendance
+                    and clear backlogs to improve your placement
+                    opportunities.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="dashboard-footer">
+        © 2026 PlaceReady · Placement Eligibility Checker
+    </footer>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+</html>
