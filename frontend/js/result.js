@@ -23,7 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Display student name
         const summaryText = document.createElement("p");
-        summaryText.textContent = "Student: Demo Student";
+        const studentName = sessionStorage.getItem("studentName") || "Student";
+        summaryText.textContent = "Student: "+ studentName;
         summary.appendChild(summaryText);
 
         // Display student details
@@ -37,8 +38,8 @@ document.addEventListener("DOMContentLoaded", function () {
         // Display number of eligible companies
         const eligibleCount = document.createElement("p");
         eligibleCount.textContent =
-            "Eligible Companies: " + data.eligibleCount +
-            " out of " + data.companies.length;
+            "Eligible Companies: " + data.results.filter(company => company.eligible).length +
+            " out of " + data.results.length;
         summary.appendChild(eligibleCount);
 
         // Display date and time of eligibility check
@@ -53,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
         heading.textContent = "Eligibility Results";
         results.appendChild(heading);
 
-        data.companies.forEach(function (company) {
+        data.results.forEach(function (company) {
             const card = document.createElement("div");
             card.className = "dashboard-card";
 
@@ -67,9 +68,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const requirements = document.createElement("p");
             requirements.textContent =
-                "Minimum CGPA: " + company.minCgpa +
-                " | Maximum backlogs: " + company.maxBacklogs +
-                " | Minimum attendance: " + company.minAttendance + "%";
+             "Minimum CGPA: " + (company.min_cgpa ?? company.min_Cgpa ?? "Not available") +
+            " | Maximum backlogs: " + (company.max_backlogs ?? company.max_Backlogs ?? "Not available") +
+            " | Minimum attendance: " + (company.min_attendance ?? company.min_Attendance ?? "Not available") + "%";
 
             card.appendChild(name);
             card.appendChild(status);

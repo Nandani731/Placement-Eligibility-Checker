@@ -50,13 +50,16 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             const results = companies.map(company => ({
-                companyId: company.companyId,
-                name: company.name,
-                eligible:
-                    cgpa >= Number(company.minCgpa) &&
-                    backlogs <= Number(company.maxBacklogs) &&
-                    attendance >= Number(company.minAttendance)
-            }));
+            companyId: company.company_id,
+            name: company.name,
+            min_cgpa: Number(company.min_cgpa),
+            max_backlogs: Number(company.max_backlogs),
+            min_attendance: Number(company.min_attendance),
+        eligible:
+        cgpa >= Number(company.min_cgpa) &&
+        backlogs <= Number(company.max_backlogs) &&
+        attendance >= Number(company.min_attendance)
+}));
 
             results.forEach(result => {
                 const card = document.createElement("div");
